@@ -1,0 +1,7 @@
+cURL command:
+@'
+{"username":"task6user","password":"password123"}
+'@ | curl.exe -sS -X POST "http://127.0.0.1:5000/register" -H "Content-Type: application/json" --data-binary "@-"
+
+Output:
+{"message":"User successfully registered. Now you can login"}

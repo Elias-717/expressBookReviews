@@ -1,0 +1,7 @@
+cURL command:
+@'
+{"username":"loginuser","password":"password123"}
+'@ | curl.exe -sS -c "login-cookie.txt" -X POST "http://127.0.0.1:5000/customer/login" -H "Content-Type: application/json" --data-binary "@-"
+
+Output:
+{"message":"User successfully logged in","accessToken":"<JWT returned by server>"}

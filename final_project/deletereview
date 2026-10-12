@@ -1,0 +1,5 @@
+cURL command:
+curl.exe -sS -b "review-cookie.txt" -X DELETE "http://127.0.0.1:5000/customer/auth/review/1"
+
+Output:
+{"message":"Review deleted successfully"}
